@@ -97,7 +97,7 @@ def parse_numerical(feature, value, movie, movie_id):
 def get_api_data(movie_id):
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkOTg1ZTg5NWRkNzIzYmRlOTA5N2ViNGRmYTRmM2E3NSIsInN1YiI6IjY1MzA2YzA2YTZhNGMxMDBhZDE2NmUxNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TVADO4FCNQL-rklFTO--wBV9OptzZ3v3ZqRBIdMpMFM"
+        "Authorization": "xxxxxx"
     }
     movie_data_url = "https://api.themoviedb.org/3/movie/" + str(movie_id) + "?language=en-US"
     response = requests.get(movie_data_url, headers=headers)
@@ -133,15 +133,13 @@ def get_api_features(movie_id):
         return {}
     
 
-api_read_access_token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkOTg1ZTg5NWRkNzIzYmRlOTA5N2ViNGRmYTRmM2E3NSIsInN1YiI6IjY1MzA2YzA2YTZhNGMxMDBhZDE2NmUxNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TVADO4FCNQL-rklFTO--wBV9OptzZ3v3ZqRBIdMpMFM"
-api_key = "d985e895dd723bde9097eb4dfa4f3a75"
-
+api_read_access_token = "xxxxx"
+api_key = "xxxxxxx"
 url = "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&primary_release_date.gte=2010-01-01&release_date.gte=2010-01-01&sort_by=popularity.desc&vote_count.gte=100&with_original_language=en"
 
 headers = {
     "accept": "application/json",
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkOTg1ZTg5NWRkNzIzYmRlOTA5N2ViNGRmYTRmM2E3NSIsInN1YiI6IjY1MzA2YzA2YTZhNGMxMDBhZDE2NmUxNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TVADO4FCNQL-rklFTO--wBV9OptzZ3v3ZqRBIdMpMFM"
-}
+    "Authorization": "xxxxxxxx",}
 
 start_time = time.time()
 response = requests.get(url, headers=headers)
