@@ -67,6 +67,18 @@ The data collection process involves a multi-step approach to ensure comprehensi
 
 **Note on Runtime:** The entire data acquisition process, especially the web scraping part, can be lengthy, taking approximately **1-2 hours** to run from scratch due to numerous API calls and web requests, and built-in `time.sleep()` to respect API rate limits.
 
+### Sample Data Acquisition Output:
+The final output of the data acquisition process is stored in the all_movies.json file, which contains detailed information for each movie, including both Wikipedia and TMDb data.
+
+📂 Due to its large size, GitHub may not render the full content of all_movies.json in the browser.
+📥 To explore the complete dataset, please download the file manually from the repository.
+
+Here is a sample preview of the JSON structure and contents:
+
+![Sample Output Snapshot](json_movies.png)
+
+
+
 ## Technologies and Tools
 
 -   **Python 3.x:** The primary programming language used for the project.
@@ -156,7 +168,6 @@ This scatter plot explores the relationship between a movie's production budget 
 
 Finally, comprehensive statistical summaries (mean, median, max, min, standard deviation) are provided for quantitative movie attributes such as `budget`, `box_office`, `vote_average`, `vote_count`, and `runtime`. This offers a foundational understanding of the central tendencies and spread of these key numerical features across the dataset.
 
-### 📁 Project Directory Structure
 ### 📁 Project Directory Structure
 
 - `DSCI Final Project Presentation.pptx` – Final project presentation slides  
