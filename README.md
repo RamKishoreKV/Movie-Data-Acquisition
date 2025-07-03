@@ -22,6 +22,20 @@ This repository contains a Python project designed to collect, process, and anal
 ## About the Project
 
 This project addresses the challenge of gathering comprehensive movie data from disparate sources and transforming it into a structured format for analysis. It employs web scraping techniques for Wikipedia and API calls for TMDb to build a rich dataset. The subsequent analysis identifies top performers among directors and actors based on profitability, critical reception, and volume of work, and visualizes genre distribution. This repository also includes the final project presentation and scoping document from the DSCI course.
+### 📁 Project Directory Structure
+
+- `DSCI Final Project Presentation.pptx` – Final project presentation slides  
+- `DSCI511 - Project Scoping (1).docx` – Project scoping document  
+- `all_movies.json` – Primary JSON file containing scraped and processed movie data  
+- `all_movies_backup.json` – Backup of the movie data  
+- `final_project.ipynb` – Jupyter Notebook with acquisition, processing, and analysis  
+- `final_project.py` – Core logic in Python script format  
+- `readable_all_movies.json` – Human-readable version of JSON data  
+- `top_genres_distribution.png` – Genre distribution pie chart  
+- `budget_vs_revenue_scatter.png` – Budget vs. revenue scatter plot  
+- `README.md` – This file  
+
+
 
 ## Features
 
@@ -67,7 +81,7 @@ The data collection process involves a multi-step approach to ensure comprehensi
 
 **Note on Runtime:** The entire data acquisition process, especially the web scraping part, can be lengthy, taking approximately **1-2 hours** to run from scratch due to numerous API calls and web requests, and built-in `time.sleep()` to respect API rate limits.
 
-### Sample Data Acquisition Output:
+## Sample Data Acquisition Output:
 The final output of the data acquisition process is stored in the all_movies.json file, which contains detailed information for each movie, including both Wikipedia and TMDb data.
 
 📂 Due to its large size, GitHub may not render the full content of all_movies.json in the browser.
@@ -168,20 +182,22 @@ This scatter plot explores the relationship between a movie's production budget 
 
 Finally, comprehensive statistical summaries (mean, median, max, min, standard deviation) are provided for quantitative movie attributes such as `budget`, `box_office`, `vote_average`, `vote_count`, and `runtime`. This offers a foundational understanding of the central tendencies and spread of these key numerical features across the dataset.
 
-### 📁 Project Directory Structure
+## 🔗 Related Projects
+### 🔄 Further Analysis & Applications
 
-- `DSCI Final Project Presentation.pptx` – Final project presentation slides  
-- `DSCI511 - Project Scoping (1).docx` – Project scoping document  
-- `all_movies.json` – Primary JSON file containing scraped and processed movie data  
-- `all_movies_backup.json` – Backup of the movie data  
-- `final_project.ipynb` – Jupyter Notebook with acquisition, processing, and analysis  
-- `final_project.py` – Core logic in Python script format  
-- `readable_all_movies.json` – Human-readable version of JSON data  
-- `top_genres_distribution.png` – Genre distribution pie chart  
-- `budget_vs_revenue_scatter.png` – Budget vs. revenue scatter plot  
-- `README.md` – This file  
+While this repository provides a comprehensive pipeline for acquiring modern movie data (2010 onward), we used a **different version of the dataset** for further analysis — specifically focusing on **American movies released between 1950 and 2010**. This was done to explore long-term industry trends and historical patterns.
 
+📂 **Explore the companion repository here:**  
+🔗 [👉 Movie Database Analysis Repository](https://github.com/RamKishoreKV/Movie-Database-Analysis)
 
+That project includes:
+- NLP-based genre prediction (spaCy + TF-IDF)
+- Content-based recommendation system
+- Actor–Director collaboration network graphs
+- Genre and popularity trend visualizations
+- Financial and critical performance breakdowns
+
+Together, both repositories form a complete movie intelligence system — from raw data acquisition to advanced insights and recommendation modeling.
 
 
 ## Contributing
